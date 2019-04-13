@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Drain Surgeon</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="myStyle.css">
+
+  
+
+ <style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #90d0d2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #90d0d2;
+    color:black;
+}
+
+.active {
+	color:red;
+    background-color: #90d0d2;
+    
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 25%;
+  width: auto;
+  padding: 16px;
+  
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  
+}
+.h-contact .fa {
+    color: #ffffff;
+    margin: 0px 10px 0px 0px;
+    font-size: 18px;
+}
+.h-contact {
+    margin: 18px 0px;
+    text-align: right;
+    color: #868484;
+}
+.h-contact a {
+    color: #b0ded3;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+}
+.h-contact a:hover {
+    color: #a0a0a0;
+    text-decoration: none;
+}
+.h-contact p {
+    color: #868484;
+    font-size: 22px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+}
+.header-container {
+    background: #000000;
+}
+.navbar-inverse {
+    background-color: transparent;
+    border-color: transparent;
+    margin-bottom: 0px;
+    border: none;
+}
+.navbar-nav {
+    float: left;
+    margin: 0;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    font-family: 'Ubuntu', sans-serif;
+    color: #b0ded3;
+    font-size: 17px;
+    padding: 22px 10px;
+    margin: 0px 5px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.navbar-inverse .navbar-nav > li > .active {
+    background: #b0ded3;
+    color: black;
+}
+.navbar-inverse .navbar-nav > li > a:hover {
+    background: #b0ded3;
+    color: #000000;
+}
+.navbar {
+    position: relative;
+    min-height: 0;
+}
+.navbar-nav > li > .dropdown-menu {
+    margin-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background: #000000;
+}
+/*.dropdown-menu > li > a {
+    font-family: 'Ubuntu', sans-serif;
+    color: #b0ded3;
+    font-weight: 500;
+    font-size: 16px;
+    display: block;
+    padding: 10px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.42857143;
+    color: #fff;
+    white-space: nowrap;
+    background: transparent;
+}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    background: #b0ded3;
+    color: #000000;
+} 
+*/
+</style>
+ 
+
+</head>
+<body>
+	<div class="">
+		<div class="slideshow">
+			
+
+						<div class="mySlides">
+  							<img src="img/slider.jpg" style="width:100%">
+						</div>
+						<div class="mySlides">
+ 							 <img src="img/slider2.jpg" style="width:100%">
+						</div>
+						<div class="mySlides">
+ 							 <img src="img/slider3.jpg" style="width:100%"> 
+						</div>
+
+
+							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+							<a class="next" onclick="plusSlides(1)">&#10095;</a>
+					
+					
+		
+			
+				<div class="centered">
+						<img src="img/logo.png" alt="logo picture" width="100%" height="auto">
+				
+				</div>
+			</div>
+			
+	</div>
+
+
+
+	<div class="header-container" >
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-sm-5 col-xs-12 navigation-container navigationbar" >
+					 <nav role="navigation" class="navbar navbar-inverse navigation"" >
+ 
+							<div class="navbar-header">
+  							
+  							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+  									<span class="sr-only">Toggle navigation</span>
+        							<span class="icon-bar"></span>
+        							<span class="icon-bar"></span>
+        							<span class="icon-bar"></span>                        
+      							</button>
+      							<a class="navbar-brand visible-xs">MENU</a>
+      						</div>
+     					 <div class="collapse navbar-collapse" id="myNavbar">
+    							<ul class="cf nav navbar-nav" >
+      								<li><a href="#" class="active">HOME</a></li>
+       								 <li><a href="#">ABOUT</a></li>
+       								<li><a href="#">SERVICES</a></li>
+        							 <li><a href="#">GALLERY</a></li>
+        							<li><a href="#">CONTACT</a></li>
+   								</ul>
+   						</div>
+   					
+   					</nav>
+   				</div>
+   <div class="col-md-4 col-sm-4 col-xs-12 h-contact hidden-xs"><a href="mailto:info@drainsurgeonltd.co.uk" title="Click to mail"><div class="glyphicon glyphicon-envelope">info@drainsurgeonltd.co.uk</div></a></div>
+   <div class="col-md-2 col-sm-3 col-xs-12 h-contact hidden-xs"><a href="tel:01224 706111" title="Click to call"><div class="glyphicon glyphicon-earphone aria-hidden="true"">0124706111</div></a></div>
+       
+    	 
+	</div>
+</div>
+
+</div>
+	<div class="container-fluid">
+		<div class="container padding">
+			<div class="row">
+				
+				<div class="col-sm-12">
+					<p class="font">Drain Unblocking in Aberdeenshire</p>
+					<p class="font2">Do you need your drain unblocking in Aberdeen? If so, make us your first port of call. Drain Surgeon(North East) Ltd is based in Aberdeen and we can provide our service to any clients with an AB postcode. Our friendly team are always on hand to offer help and advise, so why not call us today to discuss your requirements!?
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<img src="img/banner.jpg" alt="image" width="100%" height="auto">
+					<div class="textCenter centeredText">
+						<p class="font1"> We are able to undertake insurance work and offer a</p>
+						<p class="font">24 Hour emergency Service 01224706111</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="container padding">
+			<div class="row">
+				<div class="col-sm-12">
+					
+					<p class="font">Our Services</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-3">
+				
+				 <div class="thumbnail pad1">
+            <a href="#">
+          <img src="img/s2.png" alt="Nature" width="" height="auto"></a></div>
+          <div class="caption">
+            <p class="font2" >Drain and Sink Unblocking and Cleaning</p>
+        
+        
+      </div>
+					
+				</div>
+				<div class="col-sm-3">
+					<div class="pad1">
+					<img src="img/s1.png" alt="ajhda" width="auto" height="auto">
+				</div>
+					<p class="font2">Toilets and Baths</p>
+				</div>
+				<div class="col-sm-3">
+					<div class="pad1">
+					<img src="img/s3.png" alt="ajhda" width="auto" height="auto">
+				</div>
+					<p class="font2">Septic Tanks</p>
+				</div>
+				<div class="col-sm-3">
+					<div class="pad1">
+					<img src="img/s4.png" alt="ajhda" width="auto" height="auto">
+				</div>
+					<p class="font2">Root Cutting</p>
+				</div>
+				
+			</div>
+
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="pad1">
+					<img src="img/s5.png" alt="ajhda" width="auto" height="auto">
+				</div>
+					<p class="font2">High Pressure Water Jetting</p>
+				</div>
+				<div class="col-sm-3">
+					<div class="pad1">
+					<img src="img/s6.png" alt="ajhda" width="auto" height="auto">
+				</div>
+					<p class="font2">CCTV Surveys</p>
+				</div>
+				<div class="col-sm-3">
+					<div class="pad1">
+					<img src="img/s7.png" alt="ajhda" width="auto" height="auto">
+				</div>
+					<p class="font2">Gutter and Downpipe Cleaning</p>
+				</div>
+				<div class="col-sm-3">
+					<div class="pad1">
+					<img src="img/s8.png" alt="ajhda" width="auto" height="auto">
+				</div>
+					<p class="font2">Patch Lining</p>
+				</div>
+				
+			</div>
+
+		</div>
+	</div>
+
+	<div class="" style="background-color:#87aaa2; padding: 40px">
+		<div class="container" >
+			<div class="row">
+				<div class="col-sm-3">
+					<p class="headings">ADDRESS</p>
+					<p class="white "> Denmore Industrial Estate </br>Denmore Road</br> Bridge of Don </br>Aberdeen</br> AB23 8JW</p>
+					<p class="white "> Company No. SC227526</p>
+				</div>
+				<div class="col-sm-3">
+					<p class="headings">TELEPHONE</p>
+					<p class="white font2">01224706111</p>
+	
+				</div>
+				<div class="col-sm-3">
+					<p class="headings">MAIL</p>
+					<p class="white font2">info@drainsurgeonltd.co.uk</p>
+				</div>
+				<div class="col-sm-3">
+				<a><img src="img/facebook.jpg" alt="facebook image" width="100%" height="auto"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="" style="background-color:black; padding-top: 20px">
+		<div class="container" >
+			<div class="row">
+				<div class="col-sm-12">
+					<p class="white"> Drain Syrgeon (North East) Limited <span class="colorChange">©2017|All Rights Reserved|</span>Website Design <span class="colorChange"> and</span> Development <span class="colorChange">by</span> JP Web Solutoions</p> 
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+	
+</body>
+</html>
